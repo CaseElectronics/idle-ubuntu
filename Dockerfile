@@ -1,4 +1,6 @@
 FROM ubuntu
 
-COPY .bash_profile /
-COPY .bash_profile /root
+COPY .bash_aliases /
+COPY .bash_aliases /root
+
+RUN echo ". ~/.bash_aliases" > /.bashrc
